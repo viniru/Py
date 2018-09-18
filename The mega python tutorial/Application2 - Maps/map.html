@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_32171a42df354e7ea21319ea47758717 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_32171a42df354e7ea21319ea47758717" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_32171a42df354e7ea21319ea47758717 = L.map(
+                                  'map_32171a42df354e7ea21319ea47758717',
+                                  {center: [30,0],
+                                  zoom: 6,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_84aceb35d0404627a89b15bf00cb314a = L.tileLayer(
+                'https://{s}.tiles.mapbox.com/v3/mapbox.world-bright/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_32171a42df354e7ea21319ea47758717);
+        
+    
+            var feature_group_98022f2d367f4aa5935789664ed3c3aa = L.featureGroup(
+                ).addTo(map_32171a42df354e7ea21319ea47758717);
+        
+    
+
+            var marker_c13413bff6614a2fa54b86d9523c2b8a = L.marker(
+                [1,3],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_98022f2d367f4aa5935789664ed3c3aa);
+            
+    
+
+                var icon_76c7d6778479459fb5efcc36d3a134b2 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c13413bff6614a2fa54b86d9523c2b8a.setIcon(icon_76c7d6778479459fb5efcc36d3a134b2);
+            
+    
+            var popup_7bc50df5775741d686ed2ba8a306cd54 = L.popup({maxWidth: '300'});
+
+            
+                var html_8ef7bd85e587476daca597e4e3a38d2a = $('<div id="html_8ef7bd85e587476daca597e4e3a38d2a" style="width: 100.0%; height: 100.0%;">hi, kadle</div>')[0];
+                popup_7bc50df5775741d686ed2ba8a306cd54.setContent(html_8ef7bd85e587476daca597e4e3a38d2a);
+            
+
+            marker_c13413bff6614a2fa54b86d9523c2b8a.bindPopup(popup_7bc50df5775741d686ed2ba8a306cd54);
+
+            
+        
+    
+
+            var marker_1bb13a988774444b842a47e44f833b48 = L.marker(
+                [4,6],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_98022f2d367f4aa5935789664ed3c3aa);
+            
+    
+
+                var icon_fdb2c59f9f0c4b2b9dddfdde59bedae7 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1bb13a988774444b842a47e44f833b48.setIcon(icon_fdb2c59f9f0c4b2b9dddfdde59bedae7);
+            
+    
+            var popup_7315c28523134175bcbb1af570b7af0a = L.popup({maxWidth: '300'});
+
+            
+                var html_1aa2af1ca393410c95b17abfba6303a6 = $('<div id="html_1aa2af1ca393410c95b17abfba6303a6" style="width: 100.0%; height: 100.0%;">hi, kadle</div>')[0];
+                popup_7315c28523134175bcbb1af570b7af0a.setContent(html_1aa2af1ca393410c95b17abfba6303a6);
+            
+
+            marker_1bb13a988774444b842a47e44f833b48.bindPopup(popup_7315c28523134175bcbb1af570b7af0a);
+
+            
+        
+</script>
